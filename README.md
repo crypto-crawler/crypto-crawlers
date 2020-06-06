@@ -4,9 +4,31 @@ The All-in-one Solution to crawl data from cryptocurrency exchanges.
 
 ## Download Data
 
-**For most people, don't bother to run crawlers, I'm publishing data via [Syncthing](https://syncthing.net/), the sharing key is XXX**. Data is published hourly.
+**For most people, don't bother to run crawlers, I'm publishing data to the following places**:
+
+1. BaiduNetDisk <https://pan.baidu.com/s/187YGeS5LHuJruq57zZLvmg>, code: 3142.
+2. [Syncthing](https://syncthing.net/), the device ID is WKQ5RQX-JKO563V-R7ASK74-QPBWTXA-DK3F7FU-DVSDMDJ-FZUNZN3-O2RENQF. A new connected client needs to be approved manually by me, so this way is not scalable.
+
+Data is published hourly.
 
 Directory structure:
+
+```text
+trade              # trade messages, a.k.a., filled orders
+└── Binance-Swap
+    └── BTC_USDT
+    └── ETH_USDT
+        └── 2020-06-06T12.zip
+        └── 2020-06-06T13.zip
+spot_index_price   # Spot index price from OKEx
+└── OKEx-BTC_USDT
+    └── 2020-06-06T12.zip
+    └── 2020-06-06T13.zip
+spot_index_price_kline
+└── OKEx-BTC_USDT  # Spot index price klines from OKEx
+    └── 2020-06-06T12.zip
+    └── 2020-06-06T13.zip
+```
 
 ## How to run
 
