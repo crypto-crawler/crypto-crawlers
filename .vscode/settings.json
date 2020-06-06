@@ -1,0 +1,10 @@
+{
+  "sync.gist": "c1b82fe9cb9114c825ddfe38376f78b6",
+  "sync.autoDownload": true,
+  "sync.autoUpload": false,
+  "sync.forceDownload": false,
+  "sync.quietSync": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "remote.containers.defaultExtensions": ["shan.code-settings-sync"]
+}
