@@ -20,7 +20,7 @@ trade              # trade messages, a.k.a., filled orders
     └── ETH_USDT
         └── 2020-06-06T12.zip
         └── 2020-06-06T13.zip
-spot_index_price   # Spot index price from OKEx
+spot_index_price   # Spot index price from OKEx https://www.okex.com/docs/en/#Index-ticker
 └── OKEx-BTC_USDT
     └── 2020-06-06T12.zip
     └── 2020-06-06T13.zip
