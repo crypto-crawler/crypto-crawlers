@@ -14,7 +14,7 @@ export class RotatedFileWriter implements MsgWriter {
 
   private fileStream: fs.WriteStream;
 
-  constructor(rootDir: string, interval: 'Minutely' | 'Hourly' | 'Daily' = 'Minutely') {
+  constructor(rootDir: string, interval: 'Minutely' | 'Hourly' | 'Daily' = 'Hourly') {
     this.rootDir = rootDir;
     if (!fs.existsSync(rootDir)) {
       mkdirp.sync(rootDir);
