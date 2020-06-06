@@ -18,7 +18,8 @@ const commandModule: yargs.CommandModule = {
     const okexIndexPairs = swapMarkets.map((m) => m.pair);
 
     const PAIRS = (process.env.PAIRS || ' ').split(' ').filter((x) => x);
-    const pairs = PAIRS.filter((x) => okexIndexPairs.includes(x));
+    const pairs =
+      PAIRS.length > 0 ? PAIRS.filter((x) => okexIndexPairs.includes(x)) : okexIndexPairs;
     assert.ok(pairs.length > 0);
 
     const logger = createLogger(`crawler-spot-index-price`);
