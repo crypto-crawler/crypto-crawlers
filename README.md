@@ -14,7 +14,7 @@ Data is published hourly.
 Directory structure:
 
 ```text
-trade              # trade messages, a.k.a., filled orders
+trade              # trade messages(i.e., filled orders)
 └── Binance-Swap
     └── BTC_USDT
     └── ETH_USDT
