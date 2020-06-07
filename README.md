@@ -9,7 +9,7 @@ The All-in-one Solution to crawl data from cryptocurrency exchanges.
 1. BaiduNetDisk <https://pan.baidu.com/s/187YGeS5LHuJruq57zZLvmg>, code: 3142.
 2. [Syncthing](https://syncthing.net/), the device ID is WKQ5RQX-JKO563V-R7ASK74-QPBWTXA-DK3F7FU-DVSDMDJ-FZUNZN3-O2RENQF. A new connected client needs to be approved manually by me, so this way is not scalable.
 
-Data is published hourly.
+Data is published daily at 00:00AM UTC timezone.
 
 Directory structure:
 
@@ -28,6 +28,11 @@ spot_index_price_kline
 └── OKEx-BTC_USDT  # Spot index price klines from OKEx
     └── 2020-06-06T12.zip
     └── 2020-06-06T13.zip
+funding-rates      # Swap funding rates
+└── Binance.zip
+└── BitMEX.zip
+└── Huobi.zip
+└── OKEx.zip
 ```
 
 ## How to run
