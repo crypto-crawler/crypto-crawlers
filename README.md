@@ -18,16 +18,16 @@ trade              # trade messages(i.e., filled orders)
 └── Binance-Swap
     └── BTC_USDT
     └── ETH_USDT
-        └── 2020-06-06T12.zip
-        └── 2020-06-06T13.zip
+        └── 2020-06-07.zip
+        └── 2020-06-07.zip
 spot_index_price   # Spot index price from OKEx https://www.okex.com/docs/en/#Index-ticker
 └── OKEx-BTC_USDT
-    └── 2020-06-06T12.zip
-    └── 2020-06-06T13.zip
+    └── 2020-06-07.zip
+    └── 2020-06-07.zip
 spot_index_price_kline
 └── OKEx-BTC_USDT  # Spot index price klines from OKEx
-    └── 2020-06-06T12.zip
-    └── 2020-06-06T13.zip
+    └── 2020-06-07.zip
+    └── 2020-06-07.zip
 funding-rates      # Swap funding rates
 └── Binance.zip
 └── BitMEX.zip
