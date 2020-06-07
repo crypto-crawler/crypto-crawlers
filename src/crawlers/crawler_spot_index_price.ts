@@ -3,7 +3,7 @@ import { crawlIndex, IndexKlineMsg, IndexTickerMsg } from 'crypto-crawler/dist/c
 import fetchMarkets from 'crypto-markets';
 import path from 'path';
 import yargs from 'yargs';
-import { MsgWriter, Publisher, RotatedFileWriter } from '../utils';
+import { MsgWriter, Publisher, RotatedFileWriterNew as RotatedFileWriter } from '../utils';
 import { Heartbeat } from '../utils/heartbeat';
 import { createLogger } from '../utils/logger';
 import { REDIS_TOPIC_SPOT_INDEX_PRICE } from './common';

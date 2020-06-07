@@ -8,13 +8,13 @@ import { MsgWriter, TimestampMsg } from './msg_writer';
 export class RotatedFileWriter implements MsgWriter {
   private rootDir: string;
 
-  private interval: 'Minutely' | 'Hourly' | 'Daily' = 'Hourly';
+  private interval: 'Minutely' | 'Hourly' | 'Daily';
 
   private timestamp: number; // current
 
   private fileStream: fs.WriteStream;
 
-  constructor(rootDir: string, interval: 'Minutely' | 'Hourly' | 'Daily' = 'Hourly') {
+  constructor(rootDir: string, interval: 'Minutely' | 'Hourly' | 'Daily' = 'Daily') {
     this.rootDir = rootDir;
     if (!fs.existsSync(rootDir)) {
       mkdirp.sync(rootDir);
