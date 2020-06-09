@@ -5,6 +5,12 @@
       "script": "dist/cli.js",
       "args": "crawler_spot_index_price",
       "instances": 1
+    },
+    {
+      "name": "crawler_hb10",
+      "script": "dist/cli.js",
+      "args": "crawler_hb10",
+      "instances": 1
     }
   ]
 }

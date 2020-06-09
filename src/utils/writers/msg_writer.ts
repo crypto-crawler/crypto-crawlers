@@ -1,6 +1,6 @@
 export interface TimestampMsg {
   exchange: string;
-  pair: string;
+  pair?: string;
   timestamp: number;
 }
 
