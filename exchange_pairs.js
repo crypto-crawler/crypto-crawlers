@@ -85,7 +85,7 @@ const exchangePairs = {
       'XTZ_USD',
       'ZEC_USD',
     ],
-    Futures: ['BTC_USDT', 'ETH_USDT'],
+    Swap: ['BTC_USDT', 'ETH_USDT'],
   },
   BitMEX: {
     Swap: ['BTC_USD', 'ETH_USD', 'XRP_USD'],
