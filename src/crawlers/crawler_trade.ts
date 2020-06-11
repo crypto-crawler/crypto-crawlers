@@ -105,7 +105,7 @@ const commandModule: yargs.CommandModule = {
       params.exchange,
       params.marketType,
       params.pairs,
-      path.join(process.env.DATA_DIR, 'trade'),
+      path.join(process.env.DATA_DIR, 'Trade'),
     );
   },
 };
