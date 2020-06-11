@@ -35,7 +35,8 @@ const commandModule: yargs.CommandModule = {
     const fileWriters: { [key: string]: MsgWriter } = {};
     pairs.forEach((pair) => {
       fileWriters[pair] = new RotatedFileWriter(
-        path.join(process.env.DATA_DIR!, 'spot_index_price', `OKEx-${pair}`),
+        path.join(process.env.DATA_DIR!, 'Index', 'OKEx', 'Price'),
+        `OKEx.Spot.Index.Price.${pair}.`,
       );
     });
 
@@ -66,12 +67,8 @@ const commandModule: yargs.CommandModule = {
                 klineFileWriters.set(
                   key,
                   new RotatedFileWriter(
-                    path.join(
-                      process.env.DATA_DIR!,
-                      'spot_index_price_kline',
-                      'OKEx',
-                      `${klineMsg.interval}-${klineMsg.pair}`,
-                    ),
+                    path.join(process.env.DATA_DIR!, 'Index', 'OKEx', 'Kline'),
+                    `OKEx.Spot.Index.Kline.${klineMsg.interval}.${klineMsg.pair}.`,
                   ),
                 );
               }

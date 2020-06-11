@@ -11,12 +11,19 @@ const fsr = require('file-stream-rotator'); // eslint-disable-line @typescript-e
 export class RotatedFileWriterNew implements MsgWriter {
   private rootDir: string;
 
+  private filenamePrefix: string;
+
   private interval: 'Minutely' | 'Hourly' | 'Daily';
 
   private fileStream: fs.WriteStream;
 
-  constructor(rootDir: string, interval: 'Minutely' | 'Hourly' | 'Daily' = 'Daily') {
+  constructor(
+    rootDir: string,
+    filenamePrefix = '',
+    interval: 'Minutely' | 'Hourly' | 'Daily' = 'Daily',
+  ) {
     this.rootDir = rootDir;
+    this.filenamePrefix = filenamePrefix;
     if (!fs.existsSync(rootDir)) {
       mkdirp.sync(rootDir);
     }
@@ -31,7 +38,7 @@ export class RotatedFileWriterNew implements MsgWriter {
   }
 
   private createWriteStream(): fs.WriteStream {
-    const filename = path.join(this.rootDir, '%DATE%.json');
+    const filename = path.join(this.rootDir, `${this.filenamePrefix}%DATE%.json`);
     let frequency = 'daily';
     let dateFormat = 'YYYY-MM-DD';
 

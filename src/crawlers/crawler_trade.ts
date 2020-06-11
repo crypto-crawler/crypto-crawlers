@@ -55,6 +55,9 @@ async function crawlTrade(
             marketType === 'Spot' || marketType === 'Swap'
               ? path.join(outputDir, `${exchange}-${marketType}`, msg.pair)
               : path.join(outputDir, `${exchange}-${marketType}`, msg.pair, msg.rawPair),
+            marketType === 'Spot' || marketType === 'Swap'
+              ? `${msg.exchange}.${msg.marketType}.${msg.pair}.`
+              : `${msg.exchange}.${msg.marketType}.${msg.pair}.${msg.rawPair}.`,
           ),
         );
       }

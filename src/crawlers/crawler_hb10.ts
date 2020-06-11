@@ -31,7 +31,8 @@ const commandModule: yargs.CommandModule = {
           fileWriters.set(
             msg.interval,
             new RotatedFileWriterNew(
-              path.join(process.env.DATA_DIR!, 'Kline', 'hb10', msg.interval),
+              path.join(process.env.DATA_DIR!, 'Index', 'Huobi', 'HB10'),
+              `Huobi.HB10.Kline.${msg.interval}.`,
             ),
           );
         }
