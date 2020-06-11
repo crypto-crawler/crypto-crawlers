@@ -1,6 +1,6 @@
 {
   "name": "crypto-crawlers",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "The All-in-one Solution to crawl data from cryptocurrency exchanges.",
   "bin": "dist/cli.js",
   "files": [
