@@ -1,6 +1,6 @@
 {
   "name": "crypto-crawlers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The All-in-one Solution to crawl data from cryptocurrency exchanges.",
   "bin": "dist/cli.js",
   "files": [
@@ -56,8 +56,8 @@
   },
   "dependencies": {
     "@types/form-data": "^2.5.0",
-    "crypto-crawler": "^2.9.7",
-    "crypto-markets": "^0.3.2",
+    "crypto-crawler": "^2.9.8",
+    "crypto-markets": "^0.3.3",
     "file-stream-rotator": "^0.5.7",
     "jszip": "^3.4.0",
     "lodash": "^4.17.15",

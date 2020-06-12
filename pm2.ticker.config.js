@@ -32,7 +32,7 @@ Object.keys(exchangePairs)
       apps.push(app);
     });
   });
-console.info(apps);
+
 module.exports = {
   apps,
 };
