@@ -7,33 +7,17 @@ The All-in-one Solution to crawl data from cryptocurrency exchanges.
 **For most people, don't bother to run crawlers, I'm publishing data to the following places**:
 
 1. BaiduNetDisk <https://pan.baidu.com/s/187YGeS5LHuJruq57zZLvmg>, code: 3142.
-2. [Syncthing](https://syncthing.net/), the device ID is WKQ5RQX-JKO563V-R7ASK74-QPBWTXA-DK3F7FU-DVSDMDJ-FZUNZN3-O2RENQF. A new connected client needs to be approved manually by me, so this way is not scalable.
+2. BitTorrent. See the table below.
 
-Data is published daily at 00:00AM UTC timezone.
+**Download Links:**
 
-Directory structure:
+| File Name | Size | Magnet Link | Comment |
+| --- | --- | --- | --- |
+| trade-2020-04.zip | 1.2G | magnet:?xt=urn:btih:0687d9b0cd1fea2908131845c6adb83796cdeef7&dn=trade-2020-04.zip&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969 | April 2020 |
+| trade-2020-05.zip | 12G | magnet:?xt=urn:btih:029302fcc40a9a8bf322933da22aacf85744d116&dn=trade-2020-05.zip&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969 | May 2020 |
+| trade-20200601-20200611.zip | 1.7G | magnet:?xt=urn:btih:677fb843cda2c24b5516b85ea7b06ec5f3503e50 | From 20200601 to 20200611 |
 
-```text
-trade              # trade messages(i.e., filled orders)
-└── Binance-Swap
-    └── BTC_USDT
-    └── ETH_USDT
-        └── 2020-06-07.zip
-        └── 2020-06-07.zip
-spot_index_price   # Spot index price from OKEx https://www.okex.com/docs/en/#Index-ticker
-└── OKEx-BTC_USDT
-    └── 2020-06-07.zip
-    └── 2020-06-07.zip
-spot_index_price_kline
-└── OKEx-BTC_USDT  # Spot index price klines from OKEx
-    └── 2020-06-07.zip
-    └── 2020-06-07.zip
-funding-rates      # Swap funding rates
-└── Binance.zip
-└── BitMEX.zip
-└── Huobi.zip
-└── OKEx.zip
-```
+The more seeders, the faster speed. Please help each other by seeding.
 
 ## How to run
 
