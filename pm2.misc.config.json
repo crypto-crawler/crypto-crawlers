@@ -11,6 +11,12 @@
       "script": "dist/cli.js",
       "args": "crawler_hb10",
       "instances": 1
+    },
+    {
+      "name": "crawler_bitmex_instrument",
+      "script": "dist/cli.js",
+      "args": "crawler_bitmex_instrument",
+      "instances": 1
     }
   ]
 }
