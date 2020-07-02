@@ -15,7 +15,8 @@ The All-in-one Solution to crawl data from cryptocurrency exchanges.
 | --- | --- | --- | --- |
 | trade-2020-04.zip | 1.2G | magnet:?xt=urn:btih:0687d9b0cd1fea2908131845c6adb83796cdeef7&dn=trade-2020-04.zip&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969 | April 2020 |
 | trade-2020-05.zip | 12G | magnet:?xt=urn:btih:029302fcc40a9a8bf322933da22aacf85744d116&dn=trade-2020-05.zip&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969 | May 2020 |
-| trade-20200601-20200611.zip | 1.7G | magnet:?xt=urn:btih:677fb843cda2c24b5516b85ea7b06ec5f3503e50&dn=trade-20200601-20200611.zip&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969 | From 20200601 to 20200611 |
+| trade-202006.zip | 6.4G | magnet:?xt=urn:btih:dcdbe1ae0ef476ce374784c63b467b2b6c2a8dd9&dn=trade-2020-06.zip&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2F |
+| open.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969 | June 2020 |
 
 The more seeders, the faster speed. Please help each other by seeding.
 
