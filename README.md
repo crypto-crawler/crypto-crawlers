@@ -49,6 +49,11 @@ pm2 start pm2.misc.config.json
 pm2 start pm2.trade.config.js
 ```
 
-## How to contribute
+## Support Me
 
-Open this project in VSCode and you're all set.
+Please use my referral links to sign up your exchange accounts.
+
+| Exchange | Referral Link                                                 |
+| -------- | ------------------------------------------------------------- |
+| Binance  | <https://www.binance.com/en/register?ref=N957C5RN>            |
+| Huobi    | <https://www.huobi.fm/en-us/topic/invited/?invite_code=5ds55> |
