@@ -87,7 +87,7 @@ export class RotatedFileWriter implements MsgWriter {
 
   private static async compress(fileIn: string, fileOut: string): Promise<void> {
     const zip = new JSZip();
-    zip.file(path.parse(fileIn).base, fs.readFileSync(fileIn, 'utf8'));
+    zip.file(path.parse(fileIn).base, fs.createReadStream(fileIn, 'utf8'));
     zip
       .generateNodeStream({
         type: 'nodebuffer',
