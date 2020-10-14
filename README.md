@@ -18,6 +18,7 @@ The All-in-one Solution to crawl data from cryptocurrency exchanges.
 | trade-2020-06.zip | af52e9f828247ce2154fbf5dadfbb2f4 | 6.4G | 94.8G | magnet:?xt=urn:btih:dcdbe1ae0ef476ce374784c63b467b2b6c2a8dd9&dn=trade-2020-06.zip&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969 | June 2020 |
 | trade-2020-07.zip | 2a7dd151622c0689582ebf9160143166 | 8.6G | 123.8G | in Baidupan | July 2020 |
 | trade-2020-08.zip | b8f69b711d9648d42051bfc66a9cf56b | 16.4G | 215.3G | in Baidupan | August 2020 |
+| trade-2020-09.zip | b2209e693022b71ad597cc09042d50c7 | 17.7G | 249.1G | in Baidupan | September 2020 |
 
 The more seeders, the faster speed. Please help each other by seeding.
 
