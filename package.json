@@ -1,6 +1,6 @@
 {
   "name": "crypto-crawlers",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The All-in-one Solution to crawl data from cryptocurrency exchanges.",
   "bin": "dist/cli.js",
   "files": [
@@ -37,27 +37,27 @@
   },
   "homepage": "https://github.com/soulmachine/crypto-crawlers",
   "devDependencies": {
-    "@types/lodash": "^4.14.162",
+    "@types/lodash": "^4.14.165",
     "@types/mkdirp": "^1.0.1",
-    "@types/node": "^14.11.8",
-    "@types/redis": "^2.8.27",
-    "@types/yargs": "^15.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
-    "@typescript-eslint/parser": "^4.4.0",
-    "eslint": "^7.11.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^6.12.0",
+    "@types/node": "^14.14.7",
+    "@types/redis": "^2.8.28",
+    "@types/yargs": "^15.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.8.0",
+    "@typescript-eslint/parser": "^4.8.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
     "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.5"
   },
   "dependencies": {
     "@types/form-data": "^2.5.0",
-    "crypto-crawler": "^3.1.3",
-    "crypto-markets": "^0.3.9",
+    "crypto-crawler": "^3.1.4",
+    "crypto-markets": "^0.4.1",
     "file-stream-rotator": "^0.5.7",
     "jszip": "^3.5.0",
     "lodash": "^4.17.20",
@@ -65,6 +65,6 @@
     "pm2": "^4.5.0",
     "redis": "^3.0.2",
     "winston": "^3.3.3",
-    "yargs": "^16.0.3"
+    "yargs": "^16.1.1"
   }
 }
