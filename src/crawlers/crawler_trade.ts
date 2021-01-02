@@ -3,13 +3,7 @@ import crawl, { SUPPORTED_EXCHANGES, TradeMsg } from 'crypto-crawler';
 import { MarketType, MARKET_TYPES } from 'crypto-markets';
 import * as path from 'path';
 import yargs from 'yargs';
-import {
-  createLogger,
-  Heartbeat,
-  MsgWriter,
-  Publisher,
-  RotatedFileWriterNew as RotatedFileWriter,
-} from '../utils';
+import { createLogger, Heartbeat, MsgWriter, Publisher, RotatedFileWriter } from '../utils';
 import { calcRedisTopic } from './common';
 
 const EXCHANGE_THRESHOLD: { [key: string]: number } = {

@@ -2,7 +2,7 @@ import { strict as assert } from 'assert';
 import { crawlHB10, HB10IndexMsg } from 'crypto-crawler/dist/crawler/huobi';
 import path from 'path';
 import yargs from 'yargs';
-import { Publisher, RotatedFileWriterNew } from '../utils';
+import { Publisher, RotatedFileWriter } from '../utils';
 import { Heartbeat } from '../utils/heartbeat';
 import { createLogger } from '../utils/logger';
 
@@ -21,7 +21,7 @@ const commandModule: yargs.CommandModule = {
 
     const publisher = new Publisher<HB10IndexMsg>(REDIS_URL);
     // interval -> writer
-    const fileWriters = new Map<string, RotatedFileWriterNew>();
+    const fileWriters = new Map<string, RotatedFileWriter>();
 
     crawlHB10(
       async (msg: HB10IndexMsg): Promise<void> => {
@@ -30,7 +30,7 @@ const commandModule: yargs.CommandModule = {
         if (!fileWriters.has(msg.interval)) {
           fileWriters.set(
             msg.interval,
-            new RotatedFileWriterNew(
+            new RotatedFileWriter(
               path.join(process.env.DATA_DIR!, 'Index', 'Huobi', 'HB10'),
               `Huobi.HB10.Kline.${msg.interval}.`,
             ),

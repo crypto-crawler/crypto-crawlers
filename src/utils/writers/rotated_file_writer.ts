@@ -8,14 +8,21 @@ import { MsgWriter, TimestampMsg } from './msg_writer';
 export class RotatedFileWriter implements MsgWriter {
   private rootDir: string;
 
+  private filenamePrefix: string;
+
   private interval: 'Minutely' | 'Hourly' | 'Daily';
 
   private timestamp: number; // current
 
   private fileStream: fs.WriteStream;
 
-  constructor(rootDir: string, interval: 'Minutely' | 'Hourly' | 'Daily' = 'Daily') {
+  constructor(
+    rootDir: string,
+    filenamePrefix = '',
+    interval: 'Minutely' | 'Hourly' | 'Daily' = 'Minutely',
+  ) {
     this.rootDir = rootDir;
+    this.filenamePrefix = filenamePrefix;
     if (!fs.existsSync(rootDir)) {
       mkdirp.sync(rootDir);
     }
@@ -29,8 +36,6 @@ export class RotatedFileWriter implements MsgWriter {
   }
 
   public async write(msg: TimestampMsg): Promise<void> {
-    if (msg.timestamp < this.timestamp) return; // timeout, ignore this message
-
     const intervalMilliseconds = RotatedFileWriter.getIntervalMilliseconds(this.interval);
     const nextTimestamp = this.timestamp + intervalMilliseconds;
 
@@ -65,13 +70,19 @@ export class RotatedFileWriter implements MsgWriter {
     let filename = '';
     switch (this.interval) {
       case 'Minutely':
-        filename = `${new Date(this.timestamp).toISOString().slice(0, 16)}.json`;
+        filename = `${this.filenamePrefix}${new Date(this.timestamp)
+          .toISOString()
+          .slice(0, 16)}.json`;
         break;
       case 'Hourly':
-        filename = `${new Date(this.timestamp).toISOString().slice(0, 13)}.json`;
+        filename = `${this.filenamePrefix}${new Date(this.timestamp)
+          .toISOString()
+          .slice(0, 13)}.json`;
         break;
       case 'Daily':
-        filename = `${new Date(this.timestamp).toISOString().slice(0, 10)}.json`;
+        filename = `${this.filenamePrefix}${new Date(this.timestamp)
+          .toISOString()
+          .slice(0, 10)}.json`;
         break;
       default:
         throw new Error(`Unknown interval ${this.interval}`);
