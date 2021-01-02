@@ -19,7 +19,7 @@ export class RotatedFileWriter implements MsgWriter {
   constructor(
     rootDir: string,
     filenamePrefix = '',
-    interval: 'Minutely' | 'Hourly' | 'Daily' = 'Minutely',
+    interval: 'Minutely' | 'Hourly' | 'Daily' = 'Hourly',
   ) {
     this.rootDir = rootDir;
     this.filenamePrefix = filenamePrefix;
@@ -110,6 +110,7 @@ export class RotatedFileWriter implements MsgWriter {
       })
       .pipe(fs.createWriteStream(fileOut))
       .on('finish', () => {
+        // TODO: hb10 has Error: ENOENT: no such file or directory if Minutely
         fs.unlinkSync(fileIn);
       });
   }
