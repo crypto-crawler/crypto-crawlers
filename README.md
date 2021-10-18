@@ -1,5 +1,7 @@
 # crypto-crawlers
 
+**Deprecated: This project is now replaced by [crypto-crawler-rs](https://github.com/soulmachine/crypto-crawler-rs)**
+
 The All-in-one Solution to crawl data from cryptocurrency exchanges.
 
 ## Download Data
